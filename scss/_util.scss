@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-end{
+    align-items: flex-end;
+}
+
+.align-items-baseline{
+    align-items: baseline;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-primary{
+    color: $primary;
+}
+
+.text-white{
+    color: #FFF;
+}
+
+.mb-l{
+    margin-bottom: 60px;
+}
+
+.mb-m{
+    margin-bottom: 30px;
+}
+
+.mb-s{
+    margin-bottom: 20px;
+}
+
+.mb-xs{
+    margin-bottom: 10px;
+}
+
+.w-100{
+    width: 100%;
+}

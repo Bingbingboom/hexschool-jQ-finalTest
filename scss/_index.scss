@@ -1,0 +1,207 @@
+// 表頭
+.social{
+    background: #f6f6f6;
+    padding: 2px 0;
+    img{
+        margin-right: 5px;
+    }
+    li{
+        margin-right: 10px;
+        &:first-child{
+            padding-right: 10px;
+            border-right: 1px solid #cccccc;
+        }
+    }
+    a:hover{
+        opacity: 0.6;
+    }
+    
+}
+
+.fb-link{
+    color: #4460a0;
+}
+
+.twitter-link{
+    color: #00aaec;
+}
+
+.menu{
+    &-list{
+        position: relative;
+    }
+    &-link{
+        border-bottom: 5px solid transparent;
+        padding: 13px 20px 9px;
+        &:hover , &:focus{
+            border-bottom: 5px solid $primary;
+        }
+    }
+}
+
+//下拉選單
+.dropdown-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 3;
+    background: rgba(255,255, 255, 0.8);
+    width: 100%;
+    a{
+        padding: 5px 0;
+        &:hover{
+            background-color: $primary;
+            color: #FFF;
+        }
+    }
+}
+
+// 圖片取代文字
+.logo{
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+//Banner
+.banner{
+    position: relative;
+    margin-bottom: 60px;
+    .slogan{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 100%;
+        background-color: rgba(0,0, 0, 0.3);
+        padding: 30px 0 30px 24px;
+        font-size: $font-l;
+
+    }
+}
+
+.swiper-container{
+    width: 1000px;
+    height: 345px;
+    img{
+        // width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+
+//課程介紹
+.card{
+    &-item{
+        width: 31%;
+        padding: 16px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px #dbdbdb;
+    }
+    img{
+        height: 135px;
+        object-fit: contain;
+    }
+    h3{
+        font-size: $font-s;
+        font-weight: bold;
+    }
+    ul{
+        list-style: disc inside;
+    }
+}
+
+//差異
+.diff{
+    h3{
+        font-size: $font-m;
+        font-weight: bold;
+    }
+    table{
+        width: 85%;
+        margin: 0 auto;
+    }
+    thead{
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        background-color: #f7f7f7;
+        text-align: left;
+    }
+    tbody{
+        tr{
+            border-bottom: 1px solid #dddddd;
+        }
+    }
+    th,td{
+        padding: 10px 20px;
+    }
+}
+
+.highlight{
+    color: $primary;
+}
+
+//表單
+.contact{
+    background: linear-gradient(#00654b,#009772);
+    padding: 30px 20px;
+    color: #FFF;
+    h3{
+        font-size: $font-m;
+        font-weight: bold;
+    }
+    &-text{
+        width: 48%;
+        // height: 245px;
+    }
+    &-info{
+        width: 48%; 
+    }
+    &-btn{
+        color: #FFF;
+        background-color: $primary;
+        border-radius: 5px;
+        padding: 10px 0;
+        width: 20%;
+        align-self: flex-end;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    label{
+        display: block;
+    }
+    textarea , input{
+        border-radius: 5px;
+        padding: 10px;  
+    }
+}
+
+//表尾
+.footer{
+    padding: 30px 15px;
+    a{
+        color: #e12d80;
+        display: inline-block;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+//Go to top
+.top{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    &:hover{
+        color: $primary;
+    }
+    .material-icons{
+        font-size: 48px;
+    }
+}
